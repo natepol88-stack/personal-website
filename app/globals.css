@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/* Dark mode driven by a `.dark` class on <html> (next-themes, class strategy). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+  Design system: cool light-gray / white-and-black CAD spec-sheet look.
+  One accent only: electric blue. Flat, high-contrast. No gradients.
+*/
+:root {
+  --background: #ffffff;
+  --surface: #f4f6f8;        /* cool light gray panel tint */
+  --foreground: #0b0d10;     /* near-black text */
+  --muted: #5a6573;          /* secondary text */
+  --line: #e2e6eb;           /* hairline borders / rules */
+  --line-strong: #c8cfd8;
+  --accent: #0b5cff;         /* electric blue */
+  --accent-contrast: #ffffff;
+}
+
+.dark {
+  --background: #0a0c0f;
+  --surface: #14171c;
+  --foreground: #f2f5f8;
+  --muted: #98a2b0;
+  --line: #232831;
+  --line-strong: #333a45;
+  --accent: #4d83ff;
+  --accent-contrast: #07101f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-contrast: var(--accent-contrast);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  border-color: var(--line);
+}
+
+html {
+  scroll-behavior: smooth;
+  /* offset anchored sections so the sticky nav does not cover headings */
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  Disable Geist Mono's slashed zero. The font draws the slash by default and ignores
+  the standard "zero" feature; its (mislabeled) ss09 stylistic set is the real toggle,
+  where "ss09" 1 turns the slash OFF. Scoped to mono surfaces so Geist Sans is untouched.
+*/
+.spec-label,
+.font-mono {
+  font-feature-settings: "ss09" 1;
+  font-variant-numeric: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Mono "spec label": small uppercase tracked monospace used for section kickers. */
+.spec-label {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Subtle scroll reveal. Respects reduced-motion via the data attribute toggle. */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal[data-shown="true"] {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Blueprint grid used for image placeholders (reads as a CAD viewport). */
+.blueprint {
+  background-color: var(--surface);
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--accent) 12%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--accent) 12%, transparent) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 28%, transparent);
+}
