@@ -121,38 +121,18 @@ export default async function ProjectPage({
         </Block>
       </div>
 
-      {/* Slide deck */}
+      {/* Slide deck: embedded only, not offered as a download */}
       {project.deck && (
         <section className="mt-12 border-t border-line pt-8">
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <p className="spec-label">Slide deck</p>
-            <a
-              href={project.deck}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm text-accent hover:underline"
-            >
-              Download deck (PDF)
-              <ArrowUpRight size={14} />
-            </a>
-          </div>
+          <p className="spec-label">Slide deck</p>
           <object
-            data={project.deck}
+            data={`${project.deck}#toolbar=0&navpanes=0`}
             type="application/pdf"
             className="mt-4 aspect-[4/3] w-full border border-line"
             aria-label={`${project.title} slide deck`}
           >
             <p className="p-6 text-[15px] text-muted">
-              Your browser cannot display the embedded deck.{" "}
-              <a
-                href={project.deck}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-accent hover:underline"
-              >
-                Open the PDF in a new tab
-              </a>
-              .
+              Your browser cannot display the embedded deck.
             </p>
           </object>
         </section>

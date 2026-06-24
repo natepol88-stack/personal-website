@@ -17,14 +17,13 @@ export type Publication = {
 
 export const publications: Publication[] = [
   {
-    // Placeholder title until Nate provides the exact published title.
-    title: "Artificial Photosynthesis for Sustainable Fuel Generation",
+    title: "The Rise of Artificial Photosynthesis as a Resourceful Source of Alternative Energy",
     venue: "Koehler Instrument Company",
     status: "Published, Petrol-Online",
     year: "2026",
-    href: "", // add the published-article link when available
+    href: "https://www.petro-online.com/article/analytical-instrumentation/11/koehler-instrument-company-inc/the-rise-of-artificial-photosynthesis-as-a-resourceful-source-of-alternative-energy/3788",
     pdf: "", // drop the final paper at /public/publications/ and reference it here
-    poster: "", // drop the final poster PDF at /public/publications/ and reference it here
+    poster: "/publications/artificial-photosynthesis-poster.pdf",
   },
   {
     // Placeholder title until Nate provides the exact title.

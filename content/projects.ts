@@ -54,7 +54,7 @@ export const projects: Project[] = [
       "Five print iterations converged on about 0.3 mm radial clearance, the sweet spot between free rotation and clean engagement.",
       "Unexpectedly doubled as a satisfying fidget toy, a reminder that good mechanical tolerancing directly shapes the user experience.",
     ],
-    images: [],
+    images: ["/images/projects/helical-gear-assembly/featured.jpg"],
     links: [],
     order: 1,
   },
@@ -78,7 +78,11 @@ export const projects: Project[] = [
       "Rolling-ball track delivers smooth, satisfying motion with zero ball escapes after tolerance tuning.",
       "Strengthened my experience with tolerance analysis, user-centered design, and iterative CAD refinement in Onshape.",
     ],
-    images: [],
+    images: [
+      "/images/projects/tactile-fidget-board/featured.jpg",
+      "/images/projects/tactile-fidget-board/detail-1.jpg",
+      "/images/projects/tactile-fidget-board/detail-2.png",
+    ],
     links: [],
     order: 2,
   },
@@ -102,10 +106,9 @@ export const projects: Project[] = [
       "Linear regression won on accuracy and efficiency; decision tree regression was the fastest viable alternative.",
       "Strengthened the team's experience with supervised machine learning, data preprocessing, and quantitative model evaluation.",
     ],
-    images: [],
+    images: ["/images/projects/wastewater-treatment-ml-model/featured.png"],
     links: [],
-    // Drop the slide deck at the path below and it will embed on this page.
-    deck: "", // e.g. "/projects/wastewater-treatment-ml-model/deck.pdf"
+    deck: "/projects/wastewater-treatment-ml-model/deck.pdf",
     order: 3,
   },
   {
@@ -126,7 +129,7 @@ export const projects: Project[] = [
     results: [
       "Build in progress. This page will be updated with calibration, teleoperation, and training results as the project advances.",
     ],
-    images: [],
+    images: ["/images/projects/so-101-bimanual-robot-arm/featured.png"],
     links: [],
     order: 4,
     draft: true,

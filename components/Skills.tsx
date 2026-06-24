@@ -8,7 +8,6 @@ export function Skills() {
       id="skills"
       kicker="Skills"
       title="Tools and capabilities"
-      intro="Grouped by discipline, ordered from robotics and mechatronics outward."
     >
       <div className="grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
         {skills.map((group) => (

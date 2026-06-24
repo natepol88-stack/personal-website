@@ -38,7 +38,7 @@ export function Hero() {
               </a>
             )}
             <a
-              href={`mailto:${site.contact.email}`}
+              href="#contact"
               className="inline-flex items-center gap-2 rounded-md border border-line-strong px-4 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
             >
               <Mail size={15} />
@@ -85,9 +85,9 @@ export function Hero() {
             )}
           </div>
 
-          {/* Hands-on engineering photo */}
-          <div className="relative aspect-[4/3] w-full overflow-hidden border border-line">
-            {site.hasActionPhoto ? (
+          {/* Hands-on engineering photo: omitted until a real photo is available */}
+          {site.hasActionPhoto && (
+            <div className="relative aspect-[4/3] w-full overflow-hidden border border-line">
               <Image
                 src={site.actionPhoto}
                 alt={site.actionPhotoAlt}
@@ -95,16 +95,8 @@ export function Hero() {
                 sizes="(max-width: 768px) 256px, 320px"
                 className="object-cover"
               />
-            ) : (
-              <div className="blueprint relative flex h-full w-full items-center justify-center">
-                <div className="absolute inset-3 border border-dashed border-line-strong/70" />
-                <p className="relative z-10 px-4 text-center font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
-                  Hands-on engineering
-                  <span className="mt-1 block text-muted/70">image pending</span>
-                </p>
-              </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
     </section>

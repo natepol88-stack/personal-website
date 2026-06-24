@@ -5,7 +5,7 @@ export const site = {
   name: "Nate Polishook",
   // Robotics/mechatronics-first positioning, broadening to top tech.
   role: "Mechanical Engineering Student",
-  tagline: "Robotics and mechatronics engineer with broad mechanical-engineering range.",
+  tagline: "Robotics and mechatronics engineer with broad mechanical‑engineering range.",
   heroSummary:
     "I design, build, and test physical hardware, from CAD and mechanism design to fabrication and embedded control. I focus on robotics and mechatronics while staying fluent across the full mechanical-engineering toolkit.",
   // Hero stat line blocks (rendered as a typographic spec row, no boxes).
@@ -17,7 +17,7 @@ export const site = {
   location: "New Jersey, USA",
   // Drop a real headshot at public/headshot.jpg and set hasHeadshot to true.
   headshot: "/headshot.jpg",
-  hasHeadshot: false,
+  hasHeadshot: true,
   // Second hero photo: hands-on engineering (soldering, machining, etc.).
   // Drop the file at public/action.jpg and set hasActionPhoto to true.
   actionPhoto: "/action.jpg",
@@ -25,7 +25,7 @@ export const site = {
   hasActionPhoto: false,
   // Drop a real resume at public/resume/nate-polishook-resume.pdf and flip hasResume to true.
   resume: "/resume/nate-polishook-resume.pdf",
-  hasResume: false,
+  hasResume: true,
   contact: {
     email: "natepolishook@gmail.com",
     linkedin: "https://www.linkedin.com/in/nate-polishook",

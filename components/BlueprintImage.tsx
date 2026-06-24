@@ -17,14 +17,14 @@ export function BlueprintImage({
 }) {
   if (src) {
     return (
-      <div className={`relative overflow-hidden ${className}`}>
+      <div className={`relative overflow-hidden bg-surface ${className}`}>
         <Image
           src={src}
           alt={alt}
           fill
           priority={priority}
           sizes="(max-width: 768px) 100vw, 600px"
-          className="object-cover"
+          className="object-contain"
         />
       </div>
     );
