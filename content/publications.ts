@@ -30,7 +30,6 @@ export const publications: Publication[] = [
     status: "Published, Petrol-Online",
     year: "2026",
     href: "https://www.petro-online.com/article/analytical-instrumentation/11/koehler-instrument-company-inc/the-rise-of-artificial-photosynthesis-as-a-resourceful-source-of-alternative-energy/3788",
-    pdf: "", // drop the final paper at /public/publications/ and reference it here
-    poster: "/publications/artificial-photosynthesis-poster.pdf",
+    pdf: "/publications/artificial-photosynthesis-poster.pdf",
   },
 ];
