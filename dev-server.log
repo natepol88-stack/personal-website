@@ -118,3 +118,8 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
  GET /projects/wastewater-treatment-ml-model 200 in 54ms (next.js: 17ms, generate-params: 9ms, application-code: 37ms)
  GET / 200 in 65ms (next.js: 8ms, application-code: 57ms)
  GET /projects/so-101-bimanual-robot-arm 200 in 33ms (next.js: 12ms, generate-params: 6ms, application-code: 21ms)
+✓ Compiled in 50ms
+ GET / 200 in 560ms (next.js: 215ms, application-code: 345ms)
+ GET / 200 in 239ms (next.js: 8ms, application-code: 231ms)
+ GET / 200 in 132ms (next.js: 61ms, application-code: 71ms)
+ GET / 200 in 134ms (next.js: 6ms, application-code: 127ms)

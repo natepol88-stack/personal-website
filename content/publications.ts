@@ -17,6 +17,14 @@ export type Publication = {
 
 export const publications: Publication[] = [
   {
+    title: "Machines that Listen to Engines: AI-Driven Optimization of Combustion Using Alternative Fuels",
+    venue: "Koehler Instrument Company",
+    status: "Published, Petrol-Online",
+    year: "2026",
+    href: "https://www.petro-online.com/article/analytical-instrumentation/11/koehler-instrument-company-inc/machines-that-listen-to-engines-ai-driven-optimization-of-combustion-using-alternative-fuels/3822",
+    pdf: "/publications/combustion-optimization.pdf",
+  },
+  {
     title: "The Rise of Artificial Photosynthesis as a Resourceful Source of Alternative Energy",
     venue: "Koehler Instrument Company",
     status: "Published, Petrol-Online",
@@ -24,14 +32,5 @@ export const publications: Publication[] = [
     href: "https://www.petro-online.com/article/analytical-instrumentation/11/koehler-instrument-company-inc/the-rise-of-artificial-photosynthesis-as-a-resourceful-source-of-alternative-energy/3788",
     pdf: "", // drop the final paper at /public/publications/ and reference it here
     poster: "/publications/artificial-photosynthesis-poster.pdf",
-  },
-  {
-    // Placeholder title until Nate provides the exact title.
-    title: "AI Optimization of Combustion Using Alternative Fuels",
-    venue: "Koehler Instrument Company",
-    status: "Forthcoming",
-    year: "2026",
-    href: "",
-    pdf: "",
   },
 ];
