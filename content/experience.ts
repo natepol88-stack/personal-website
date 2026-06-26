@@ -8,6 +8,8 @@ export type Experience = {
   start: string;
   end: string;
   bullets: string[];
+  // Small inline company/institution mark under public/logos. Optional.
+  logo?: string;
 };
 
 export const experience: Experience[] = [
@@ -17,6 +19,7 @@ export const experience: Experience[] = [
     location: "San Francisco, CA",
     start: "June 2026",
     end: "Present",
+    logo: "/logos/kovari-industries.jpg",
     bullets: [
       "Operated robots via teleoperation to generate labeled demonstration data for the imitation-learning pipeline behind autonomous garment folding, reaching 90% task accuracy on towel and t-shirt folding",
       "Assembled custom robotic hands from 15+ 3D-printed components, soldering connectors and control boards while tuning gear tolerances for smooth articulation",
@@ -30,6 +33,7 @@ export const experience: Experience[] = [
     location: "Remote",
     start: "February 2026",
     end: "Present",
+    logo: "/logos/koehler-instrument-company.jpg",
     bullets: [
       "Authored 2 technical research papers on petroleum-testing and instrumentation topics, synthesizing literature and experimental data into publication-ready documents",
       "Developed and curated 18 figures and comparative performance tables, including 9 original visualizations and 9 sourced from technical literature, analyzing catalyst efficiency, energy conversion rates, and scalability",
@@ -43,6 +47,7 @@ export const experience: Experience[] = [
     location: "New Brunswick, NJ",
     start: "January 2026",
     end: "April 2026",
+    logo: "/logos/rutgers-engineering.jpg",
     bullets: [
       "Owned parameter selection and experimental design within a 5-member team, coordinating meeting schedules and rehearsal sessions to prepare the team's final presentation",
       "Led the team in developing and benchmarking machine learning regression models to predict water quality outputs across a multi-stage wastewater treatment system (full methodology and results on the project page)",

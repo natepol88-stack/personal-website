@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Section } from "./Section";
 import { Reveal } from "./Reveal";
 import { experience } from "@/content/experience";
@@ -19,7 +20,18 @@ export function Experience() {
                 <h3 className="text-lg font-semibold text-foreground">
                   {job.title}
                 </h3>
-                <p className="text-[15px] text-accent">{job.company}</p>
+                <p className="flex items-center gap-2 text-[15px] text-accent">
+                  {job.logo && (
+                    <Image
+                      src={job.logo}
+                      alt=""
+                      width={26}
+                      height={26}
+                      className="rounded-sm object-cover"
+                    />
+                  )}
+                  {job.company}
+                </p>
                 <ul className="mt-3 space-y-2">
                   {job.bullets.map((b, i) => (
                     <li
